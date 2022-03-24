@@ -37,6 +37,7 @@ public class Programe9 {
                 break;
             case 'f' :
             System.out.println("Fatehpur");
+            break;
             default:
                 System.out.println("Invalid entry");
 

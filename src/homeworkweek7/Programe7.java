@@ -16,7 +16,8 @@ public class Programe7 {
         Programe7.sales();// calling by classname
 
     }
-     // Define static method
+
+    // Define static method
     public static void sales() {
 
         Scanner st = new Scanner(System.in);
@@ -33,23 +34,21 @@ public class Programe7 {
 
         if (amt >= 50000) {
             commission = amt * 0.35f;
-        }
-        if (amt >= 30000) {
+        } else if (amt >= 30000) {
             commission = amt * 0.20f;
-        }
-        if (amt >= 20000) {
+        } else if (amt >= 20000) {
             commission = amt * 0.10f;
-        }
-        if (amt >= 10000) {
+        } else if (amt >= 10000) {
             commission = amt * 0.05f;
-        }
-        if (amt < 10000) {
+        } else if (amt < 10000) {
             commission = 0.02f;
-        } else {
-            System.out.println("No Commission");
-        }
+        } else
+            commission=0;
+        System.out.println("The comission is :" +commission);
+
 
 
     }
+
 
 }
